@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Cozy Bean | Cafeteria Moderna</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===================================
+         NAVBAR
+    ==================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="#">
+                THE COZY BEAN
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a href="#cardapio" class="nav-link">Cardápio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#delivery" class="nav-link">Delivery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#reservas" class="nav-link">Reservas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#galeria" class="nav-link">Galeria</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#faq" class="nav-link">FAQ</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex gap-2">
+
+                    <button class="btn btn-caramel">
+                        Cadastro
+                    </button>
+
+                    <button class="btn btn-outline-light">
+                        Login
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ===================================
+         HERO SECTION
+    ==================================== -->
+
+    <header class="hero-section">
+
+        <div class="overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <h1>
+                        Saboreie Momentos,
+                        Crie Memórias.
+                    </h1>
+
+                    <p>
+                        Experiências autênticas, café artesanal e o ambiente mais instagramável da cidade.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#" class="btn btn-outline-light btn-lg">
+                            Ver Cardápio
+                        </a>
+
+                        <a href="#" class="btn btn-caramel btn-lg">
+                            Reservar Mesa
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ===================================
+         CONTADORES
+    ==================================== -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="15000">0</h2>
+                    <p>Clientes</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="120">0</h2>
+                    <p>Tipos de Café</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Anos de História</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h2 class="counter" data-target="98">0</h2>
+                    <p>% Satisfação</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         NOSSA ESSÊNCIA
+    ==================================== -->
+
+    <section class="essencia section-padding">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Nossa Essência
+            </h2>
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <img src="img/galeria2.png" class="img-fluid rounded shadow">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <p>
+                        Qualidade e sentimento em cada xícara.
+                        Café artesanal preparado com técnicas modernas.
+                    </p>
+
+                    <button class="btn btn-caramel">
+                        Conheça Mais
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         GALERIA
+    ==================================== -->
+
+    <section id="galeria" class="gallery section-padding">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Galeria Instagramável
+            </h2>
+
+            <div class="gallery-grid">
+
+                <img src="img/galeria3.png">
+                <img src="img/galeria2.png">
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         FORMULÁRIO
+    ==================================== -->
+
+    <section class="cadastro section-padding">
+
+        <div class="container">
+
+            <div class="form-box">
+
+                <h2>
+                    Cadastre-se e Fique por Dentro
+                </h2>
+
+                <form>
+
+                    <input type="text" class="form-control" placeholder="Nome Completo">
+
+                    <input type="email" class="form-control" placeholder="E-mail">
+
+                    <button class="btn btn-caramel w-100">
+                        Cadastrar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         FAQ
+    ==================================== -->
+
+    <section id="faq" class="section-padding">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                FAQ
+            </h2>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                            aria-expanded="true">
+
+                            Como reservar uma mesa?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            A reserva pode ser feita online, por telefone ou diretamente na cafeteria.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2" aria-expanded="false">
+
+                            Há opções vegetarianas e veganas?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+
+                            Sim! Temos opções especiais para quem prefere uma alimentação mais leve e sustentável.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================================
+         FOOTER
+    ==================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-3">
+
+                    <h3>THE COZY BEAN</h3>
+
+                    <p>Experiências inesquecíveis.</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5>Contato</h5>
+
+                    <p>(21) 99999-9999</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5>Links</h5>
+
+                    <p>Cardápio</p>
+
+                    <p>Reservas</p>
+
+                </div>
+
+                <div class="col-lg-3">
+
+                    <h5>Redes Sociais</h5>
+
+                    <div class="social">
+
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-tiktok"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
