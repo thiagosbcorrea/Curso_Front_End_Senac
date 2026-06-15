@@ -17,7 +17,19 @@ body {
 }
 
 .logo {
-    font-weight: 700;
+    line-height: 1.1;
+}
+
+.logo span:first-child {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.logo span:last-child {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .custom-navbar{
@@ -46,7 +58,7 @@ body {
 }
 
 .hero-section{
-    background-image: url("/projeto_final_exemplo_prof/cozy-bean/img/galeria1.png");
+    background-image: url("../img/galeria1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
