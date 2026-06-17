@@ -1,0 +1,231 @@
+:root {
+    --color-primary-caramel : #C67A42;
+    --color-text-dark: #2D1A12;
+    --color-bg-cream: #FDF9F4;
+    --color-bg-beige: #F2E3D5;
+    --color-bg-dark-footer: #180D08;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-dark);
+    background: var(--color-bg-cream);
+}
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+}
+
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.logo {
+    line-height: 1.1;
+}
+
+.logo span:first-child {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.logo span:last-child {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.custom-navbar{
+    font-family:'Playfair Display', sans-serif;
+    background:
+        linear-gradient(
+            rgba(85, 72, 65, 0.096),
+            rgba(85, 72, 65, 0.096)
+        ),
+        url("../img/tetuxa-nav.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-scrolled{
+    background:
+        linear-gradient(
+           rgba(85, 72, 65, 0.096),
+            rgba(85, 72, 65, 0.096)
+        ),
+        url("../img/tetuxa-nav.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section{
+    background-image: url("../img/galeria1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.103);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.hero-content p {
+    color: #fff;
+}
+
+.btn-caramel {
+    background: var(--color-primary-caramel );
+    color: #fff;
+    border: none;
+}
+
+.btn-caramel:hover {
+    background: #a65f2f;
+    transform: translateY(-3px);
+}
+
+.stats {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.counter {
+    color: var(--color-primary-caramel );
+    font-size: 3rem;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.form-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+}
+
+.form-box input {
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: var(--color-bg-dark-footer);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.footer-title{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.footer .container .row>div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* footer .container .row>div:nth-child(2) {
+} */
+
+@media (max-width: 767px) {
+    .footer .container .row>div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    }
+    .footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .footer .container .row>div:nth-child(2) {
+        margin-right: 0;
+    }
+    .footer-links {
+        margin-top: 30px;
+    }
+    .social {
+       justify-content: center;
+    }
+}
+#linha-footer {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social a  {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--color-bg-cream)
+}
+
+#instagram {
+    color: rgb(219, 83, 162);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
