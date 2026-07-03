@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot com TensorFlow</title>
+
+    <!--TensorFlow-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="chat-container">
+        <h1>Chatbot com TensorFlow.js</h1>
+        <div id="status"> Treinando modelo... </div>
+        <div id="chat" class="chat"></div>
+        <div class="input-area">
+            <input id="mensagem" type="text" placeholder="Digite sua mensagem..." disabled>
+            <button id="btnEnviar" onclick="enviarMensagem()" disabled>Enviar</button>
+        </div>
+    </div>
+
+
+<!-- link javascript -->
+<script src="script.js"></script>
+</body>
+</html>
